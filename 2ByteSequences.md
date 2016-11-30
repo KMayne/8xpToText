@@ -2,6 +2,7 @@
 ================
 
 This file details the tokens that correspond to the bytes in the 8xp format.
+Values in \{braces\} signify the start of a 2 byte sequence.
 
 Adapted from <http://merthsoft.com/linkguide/ti86/tokens.html>
 
@@ -9,7 +10,7 @@ Single byte tokens
 ------------------
 | Code | Token         |
 | :--: | :-----------: |
-|  00  | unused        |
+|  00  | \[unused\]    |
 |  01  | ►DMS          |
 |  02  | ►Dec          |
 |  03  | ►Frac         |
@@ -47,10 +48,10 @@ Single byte tokens
 |  23  | seq(          |
 |  24  | fnInt(        |
 |  25  | nDeriv(       |
-|  26  | unused        |
+|  26  | \[unused\]    |
 |  27  | fMin(         |
 |  28  | fMax(         |
-|  29  | (space)       |
+|  29  | \[space\]     |
 |  2A  | "             |
 |  2B  | ,             |
 |  2C  | i             |
@@ -72,7 +73,7 @@ Single byte tokens
 |  3C  | or            |
 |  3D  | xor           |
 |  3E  | :             |
-|  3F  | newline       |
+|  3F  | \[newline\]   |
 |  40  | and           |
 |  41  | A             |
 |  42  | B             |
@@ -101,14 +102,14 @@ Single byte tokens
 |  59  | Y             |
 |  5A  | Z             |
 |  5B  | θ             |
-|  5C  | 2-byte        |
-|  5D  | 2-byte        |
-|  5E  | 2-byte        |
+|  5C  | { Matrices }  |
+|  5D  | { Lists }     |
+|  5E  | { Equations } |
 |  5F  | prgm          |
-|  60  | 2-byte        |
-|  61  | 2-byte        |
-|  62  | 2-byte        |
-|  63  | 2-byte        |
+|  60  | { Pictures}   |
+|  61  | { GDB }       |
+|  62  | { Statistical variables } |
+|  63  | { Window/Finance } |
 |  64  | Radian        |
 |  65  | Degree        |
 |  66  | Normal        |
@@ -135,7 +136,7 @@ Single byte tokens
 |  7B  | IndpntAsk     |
 |  7C  | DependAuto    |
 |  7D  | DependAsk     |
-|  7E  | 2-byte        |
+|  7E  | { Graph format } |
 |  7F  | \[▫ mark\]    |
 |  80  | \[+ mark\]    |
 |  81  | \[. mark\]    |
@@ -179,7 +180,7 @@ Single byte tokens
 |  A7  | Tangent(      |
 |  A8  | DrawInv       |
 |  A9  | DrawF         |
-|  AA  | 2-byte        |
+|  AA  | { String } |
 |  AB  | rand          |
 |  AC  | π             |
 |  AD  | getKey        |
@@ -196,7 +197,7 @@ Single byte tokens
 |  B8  | not(          |
 |  B9  | iPart(        |
 |  BA  | fPart(        |
-|  BB  | 2-byte        |
+|  BB  | { Misc }      |
 |  BC  | √(            |
 |  BD  | ³√(           |
 |  BE  | ln(           |
@@ -248,7 +249,7 @@ Single byte tokens
 |  EC  | Plot1(        |
 |  ED  | Plot2(        |
 |  EE  | Plot3(        |
-|  EF  | TI-84+(C(S)E) |
+|  EF  | { TI 84(CSE)+ } |
 |  F0  | ^             |
 |  F1  | ×√            |
 |  F2  | 1-Var Stats   |
@@ -266,9 +267,9 @@ Single byte tokens
 |  FE  | Scatter       |
 |  FF  | LinReg(ax+b)  |
 
-
 Two-byte tokens
 ---------------
+
 #### Matrices - 0x5C, 0x__
 | Code | Token   |
 | :--: | :-----: |

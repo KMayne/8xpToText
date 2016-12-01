@@ -81,21 +81,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="blockConversion.hpp" />
-    <ClInclude Include="equationTokens.hpp" />
-    <ClInclude Include="GDBTokens.hpp" />
-    <ClInclude Include="graphFormatTokens.hpp" />
-    <ClInclude Include="listTokens.hpp" />
-    <ClInclude Include="matrixTokens.hpp" />
-    <ClInclude Include="miscTokens.hpp" />
-    <ClInclude Include="pictureTokens.hpp" />
-    <ClInclude Include="singleByteTokens.hpp" />
-    <ClInclude Include="statisticVarTokens.hpp" />
-    <ClInclude Include="stringTokens.hpp" />
-    <ClInclude Include="ti84Tokens.hpp" />
-    <ClInclude Include="tiCalcTokens.hpp" />
-    <ClInclude Include="tokenBlock.hpp" />
-    <ClInclude Include="windowFinanceTokens.hpp" />
+    <ClInclude Include="src\blockConversion.hpp" />
+    <ClInclude Include="src\tokens\equationTokens.hpp" />
+    <ClInclude Include="src\tokens\GDBTokens.hpp" />
+    <ClInclude Include="src\tokens\graphFormatTokens.hpp" />
+    <ClInclude Include="src\tokens\listTokens.hpp" />
+    <ClInclude Include="src\tokens\matrixTokens.hpp" />
+    <ClInclude Include="src\tokens\miscTokens.hpp" />
+    <ClInclude Include="src\tokens\pictureTokens.hpp" />
+    <ClInclude Include="src\tokens\singleByteTokens.hpp" />
+    <ClInclude Include="src\tokens\statisticVarTokens.hpp" />
+    <ClInclude Include="src\tokens\stringTokens.hpp" />
+    <ClInclude Include="src\tokens\ti84Tokens.hpp" />
+    <ClInclude Include="src\tokens\tiCalcTokens.hpp" />
+    <ClInclude Include="src\tokenBlock.hpp" />
+    <ClInclude Include="src\tokens\windowFinanceTokens.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -104,8 +104,8 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="8xpToText.cpp" />
-    <ClCompile Include="blockConversion.cpp" />
+    <ClCompile Include="src\8xpToText.cpp" />
+    <ClCompile Include="src\blockConversion.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

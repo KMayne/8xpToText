@@ -1,7 +1,7 @@
 #include <unordered_map>
 
-#include "tiCalcTokens.hpp"
 #include "tokenBlock.hpp"
+#include "tokens/tiCalcTokens.hpp"
 
 // Multi-byte value codes
 const int GDB_CODE = 0x61;

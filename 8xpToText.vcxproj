@@ -81,6 +81,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="blockConversion.hpp" />
     <ClInclude Include="equationTokens.hpp" />
     <ClInclude Include="GDBTokens.hpp" />
     <ClInclude Include="graphFormatTokens.hpp" />
@@ -93,6 +94,7 @@
     <ClInclude Include="stringTokens.hpp" />
     <ClInclude Include="ti84Tokens.hpp" />
     <ClInclude Include="tiCalcTokens.hpp" />
+    <ClInclude Include="tokenBlock.hpp" />
     <ClInclude Include="windowFinanceTokens.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="8xpToText.cpp" />
+    <ClCompile Include="blockConversion.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
